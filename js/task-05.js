@@ -12,7 +12,7 @@ const nameEl = document.querySelector("#name-output");
 
 inputsEl.addEventListener("input", (event) => {
   nameEl.textContent = event.target.value;
-  if (inputsEl.textContent === "") {
-    return Anonymus;
+  if (nameEl.textContent === "") {
+    return (nameEl.textContent = "Anonymous");
   }
 });
